@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФосАгро - Курс валют</title>
+    <link rel="shortcut icon" href="img/logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="currency.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="currency.js"></script>
+</head>
+<body>
+    <div id="burger" class="burger" onclick="toggleMenu()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    </div>
+
+    <nav id="sideMenu" class="side-menu">
+        <a href="index.html">О компании</a>
+        <a href="news.html">Новости</a>
+        <a href="currency.html">Курс валют</a>
+        <a href="contacs.html">Контакты</a>
+        <a href="video.html">Видео</a>
+    </nav>
+
+    <header>
+        <img src="img/fosagro-logo-ru.svg" id="header-logo">
+    </header>
+
+    <main>
+        <div class="currency-section">
+            <h2>Калькулятор: Узбекский сум (UZS)</h2>
+            <div class="converter">
+                <div>
+                    <label for="rub">Рубли (₽):</label>
+                    <input type="number" id="rub" min="0" step="any" placeholder="0">
+                </div>
+                <div>
+                    <label for="uzs">Сумы (UZS):</label>
+                    <input type="number" id="uzs" min="0" step="any" placeholder="0">
+                </div>
+            </div>
+            <div class="rate-row">
+                <span id="result">Загрузка курса...</span>
+            </div>
+            <div class="chart-block">
+                <canvas id="rateChart"></canvas>
+                <div id="info"></div>
+            </div>
+        </div>
+
+        <a href="#" id="back-to-top" class="back-to-top" title="Наверх">▲</a>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">О компании</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="currency.html">Курс валют</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="video.html">Видео</a></li>
+            </ul>
+            </nav>
+            <div class="footer-info">
+                <p>Телефон: +7 (800) 234-29-00</p>
+                <p>Email: region@phosagro.ru</p>
+                <p>© 2025 ФосАгро. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

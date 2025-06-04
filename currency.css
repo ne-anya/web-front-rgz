@@ -1,0 +1,87 @@
+.currency-section {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(25,80,133,0.07);
+    padding: 36px 32px 32px 32px;
+    }
+.currency-section h2 {
+    color: #195085;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.converter {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.converter label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #195085;
+}
+.converter input {
+    width: 140px;
+    padding: 8px;
+    border: 1px solid #b5c9d6;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #195085;
+    background: #f5f9fb;
+    margin-bottom: 4px;
+    outline: none;
+    transition: border 0.2s;
+}
+.converter input:focus {
+    border: 1.5px solid #195085;
+}
+.rate-row {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 18px;
+    color: #333;
+}
+#result {
+    font-weight: 600;
+    color: #195085;
+}
+.chart-block {
+    margin-top: 32px;
+}
+#rateChart {
+    background: #f5f9fb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(25,80,133,0.04);
+    padding: 10px;
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+}
+#info {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #195085;
+    font-weight: 600;
+    display: none;
+}
+@media (max-width: 600px) {
+    .currency-section {
+        padding: 18px 6px 18px 6px;
+    }
+    .converter {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    #rateChart {
+        height: 220px;
+    }
+}
